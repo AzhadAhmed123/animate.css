@@ -3008,27 +3008,27 @@
 /* Rotating entrances */
 @-webkit-keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
     opacity: 0;
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
   }
 }
 @keyframes rotateIn {
   from {
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
     opacity: 0;
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform :rotate(0deg);
+    transform: rotate(0deg);
     opacity: 1;
   }
 }
@@ -3037,6 +3037,7 @@
   animation-name: rotateIn;
   -webkit-transform-origin: center;
   transform-origin: center;
+  animation-duration: 2s;
 }
 @-webkit-keyframes rotateInDownLeft {
   from {
